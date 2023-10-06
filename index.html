@@ -15,10 +15,108 @@
 
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <h1 class="text-8xl font-bold underline">Hello world!</h1>
+  <body class="bg-gradient-to-b from-blue-500 to-blue-900 mx-10 ">
+    <div class="flex justify-between max-w-md mx-auto  text-white pt-10">
+        <div><i class="fa-solid fa-chevron-down hover:text-slate-400"></i></div>
+        <div>Playing Suggested Song</div>
+        <div class="text-4xl -translate-y-4  hover:text-slate-400">...</div>
+    </div>
 
-    <i class="fa-solid fa-play"></i>
+    <div class="flex justify-between max-w-md mx-auto pt-9 ">
+      <img src="albumart/perfect.jpg" alt="" class="rounded-xl">
+    </div>
+
+    <div class="flex justify-between mt-12 max-w-md mx-auto text-white">
+      <div class="flex flex-col">
+        <span class="text-2xl ">Perfect</span>
+        <span class="text-sm text-slate-400  hover:text-slate-200">Ed Sheeran</span>
+      </div>
+
+      <div class="flex flex-row-reverse ">
+        <div class="pl-10">
+          <element class="flex items-center justify-center rounded-full border-4 w-9 h-9  hover:text-slate-400 hover:border-slate-400">
+            <span class="fa-solid fa-add text-2xl "></span>
+          </element>
+        </div>
+        
+        
+        <element class="flex items-center justify-center rounded-full border-4 w-9 h-9 hover:text-slate-400 hover:border-slate-400">
+          <span class="fa-solid fa-subtract text-2xl"></span>
+        </element>
+      </div>
+    </div>
+
+    <!-- .progress-container {
+      background: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 0;
+      height: 4px;
+      width: 100%;
+    }
+    
+    .progress {
+      background-color: #fe8daa;
+      border-radius: 5px;
+      height: 100%;
+      width: 0%;
+      transition: width 0.1s linear;
+    } -->
+    <div class="max-w-md mx-auto">
+      <div class=" bg-slate-400 mt-10 rounded-full" id="progress-container">
+        <div class=" flex bg-white rounded-full w-3/4 h-2 justify-start" id="progress"></div>
+      </div>
+
+      <div class="text-slate-300 flex justify-between mt-1">
+        <span>2:45</span>
+        <span>-0:45</span>
+      </div>
+    </div>
+    
+
+    <div class="navigation flex justify-evenly max-w-sm mx-auto mt-10">
+      <button id="prev" class="action-btn">
+        <i class="fas fa-step-backward text-slate-50 text-4xl hover:text-slate-400"></i>
+      </button>
+
+      <element class="flex items-center justify-center rounded-full bg-white w-20 h-20 hover:bg-slate-400">
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play text-3xl text-blue-900 hover:text-slate-50 "></i>
+        </button>
+      </element>
+
+      <button id="next" class="action-btn">
+        <i class="fas fa-step-forward text-slate-50 text-4xl  hover:text-slate-400"></i>
+      </button>
+    </div>
+
+
+    <div class=" flex justify-between max-w-md mx-auto mt-10 text-white text-xl">
+      <span class="fa-solid fa-computer  hover:text-slate-400"></span>
+      <span class="fa-solid fa-arrow-up-from-bracket  hover:text-slate-400"></span>
+    </div>
+
+    <div class="bg-blue-400 flex justify-between mt-6 h-16 max-w-md mx-auto text-white rounded-t-3xl">
+      <span class="pt-5 pl-4 text-lg font-bold  hover:text-slate-300">Lyrics</span>
+
+      <div class="flex pt-5 pr-4 text-xl font-light">
+        <element class="flex items-center justify-center rounded-full bg-blue-900 w-9 h-9  hover:bg-slate-50 hover:text-slate-700">
+          <span class="fa-solid fa-arrow-up-from-bracket  hover:text-slate-700"></span>
+        </element>
+
+        <div class="pl-3">
+          <element class="flex items-center justify-center rounded-full bg-blue-900 w-9 h-9 hover:bg-slate-50 hover:text-slate-700">
+            <span class="fa-solid fa-up-right-and-down-left-from-center  "></span>
+          </element>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <!-- <h1 class="text-8xl font-bold underline">Hello world!</h1> -->
+
+    <!-- <i class="fa-solid fa-play"></i> -->
 
     <script src="main.js"></script>
   </body>
