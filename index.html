@@ -15,7 +15,8 @@
 
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-gradient-to-b from-blue-500 to-blue-900 mx-10 ">
+  <body class="bg-gradient-to-b from-blue-500 to-blue-900 mx-10 " id="music-container">
+    
     <div class="flex justify-between max-w-md mx-auto  text-white pt-10">
         <div><i class="fa-solid fa-chevron-down hover:text-slate-400"></i></div>
         <div>Playing Suggested Song</div>
@@ -23,14 +24,18 @@
     </div>
 
     <div class="flex justify-between max-w-md mx-auto pt-9 ">
-      <img src="albumart/perfect.jpg" alt="" class="rounded-xl">
+      <img src="" id="cover" alt="" class="rounded-xl">
     </div>
+
+    
 
     <div class="flex justify-between mt-12 max-w-md mx-auto text-white">
       <div class="flex flex-col">
-        <span class="text-2xl ">Perfect</span>
-        <span class="text-sm text-slate-400  hover:text-slate-200">Ed Sheeran</span>
+        <span class="text-2xl " id="title"></span>
+        <span class="text-sm text-slate-400  hover:text-slate-200" id="artistName"></span>
       </div>
+
+      
 
       <div class="flex flex-row-reverse ">
         <div class="pl-10">
@@ -64,26 +69,28 @@
     } -->
     <div class="max-w-md mx-auto">
       <div class=" bg-slate-400 mt-10 rounded-full" id="progress-container">
-        <div class=" flex bg-white rounded-full w-3/4 h-2 justify-start" id="progress"></div>
+        <div class=" flex bg-white rounded-full h-2 justify-start" id="progress"></div>
       </div>
 
       <div class="text-slate-300 flex justify-between mt-1">
-        <span>2:45</span>
-        <span>-0:45</span>
+        <span id="currTime"></span>
+        <span id="durTime"></span>
       </div>
     </div>
     
 
-    <div class="navigation flex justify-evenly max-w-sm mx-auto mt-10">
+    <div class="navigation flex justify-evenly max-w-sm mx-auto mt-10" id="music-container">
       <button id="prev" class="action-btn">
         <i class="fas fa-step-backward text-slate-50 text-4xl hover:text-slate-400"></i>
       </button>
 
-      <element class="flex items-center justify-center rounded-full bg-white w-20 h-20 hover:bg-slate-400">
-        <button id="play" class="action-btn action-btn-big">
+      <element class="flex items-center justify-center rounded-full bg-white w-20 h-20 hover:bg-slate-400" id="play">
+        <button  class="action-btn action-btn-big">
           <i class="fas fa-play text-3xl text-blue-900 hover:text-slate-50 "></i>
         </button>
       </element>
+
+      <audio src="" id="audio"></audio>
 
       <button id="next" class="action-btn">
         <i class="fas fa-step-forward text-slate-50 text-4xl  hover:text-slate-400"></i>
